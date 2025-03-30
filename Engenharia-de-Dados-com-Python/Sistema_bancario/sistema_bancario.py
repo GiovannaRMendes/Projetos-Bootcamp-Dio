@@ -43,6 +43,10 @@ while opcao != 3:
                 print("Não foi possível continuar com a operação. Não há saldo suficiente!")
                 continue
 
+            elif saldo < valor:
+                print("Não foi possível continuar com a operação. Valor a ser sacado é maior que o saldo!")
+                continue
+
             saldo -= valor
             numero_saques += 1
             extrato += f'Saque: R$ {valor:.2f}\n'
