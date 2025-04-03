@@ -108,7 +108,7 @@ def criar_usuario(lista_clientes: list):
     lista_clientes.append(cliente_novo)
 
 
-def criar_conta(agencia, numero_conta, lista_clientes)-> list:
+def criar_conta(agencia: str, numero_conta: int, lista_clientes: list) -> list:
     
     cpf = input('CPF (Formato: xxx.xxx.xxx-xx): ')
     cpf = re.sub(r'\D', '', cpf)
